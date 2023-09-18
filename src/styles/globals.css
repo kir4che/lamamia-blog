@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply box-border p-0 m-0;
+}
+
+html,
+body {
+	@apply max-w-[100vw] overflow-x-hidden bg-white text-zinc-900 dark:transition dark:bg-zinc-900 dark:text-white;
+}
+
+a {
+	@apply no-underline text-inherit;
+}
+
+/* 很多地方都會用到的 container */
+.container {
+	@apply max-w-[1366px] min-h-screen flex flex-col justify-between mx-auto my-0 px-16 py-0;
+}
